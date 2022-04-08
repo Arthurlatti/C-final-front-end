@@ -1,0 +1,15 @@
+<h1>Create new Vacation!</h1>
+<P>Pick a nice place, i need a good place when this is done!</P>
+
+<form (ngSubmit)="createVacation()">
+
+    <label>Id:</label>
+    <input type="text" name="id" [(ngModel)]="newPlace.id">
+    <label>Location:</label>
+    <input type="text" name="name" [(ngModel)]="newPlace.name">
+    <label>did you visit here?</label>
+    <input type="checkbox" name="visited" [(ngModel)]="newPlace.visited">
+    <button>Create</button>
+</form>
+
+<a [routerLink]="['/']">This is not the page your looking for!</a>

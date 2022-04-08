@@ -1,0 +1,12 @@
+<h1>Current Vacations</h1>
+
+<div *ngFor="let vacation of vacations">
+    <p>{{vacation.id}}:  {{vacation.name}} Visited: {{vacation.visited}}</p>
+        <input
+        type="checkbox"
+        [checked]="vacation.visited"
+        (change)="updateVisited()"/>
+</div>
+
+
+<a [routerLink]="['/new']">Add to my list!</a>
